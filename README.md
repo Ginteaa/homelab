@@ -82,7 +82,7 @@ flowchart LR
 
 | | Service | Purpose | Access |
 |:-:|---|---|---|
-| 📸 | **Immich** · `CT 100` | Phone photo backup and gallery | Subnet route |
+| 📸 | **Immich** · `CT 100` | Phone photo backup and gallery | Subnet router |
 | 🛡 | **Pi-hole** · `CT 101` | Local DNS + ad blocking (upstream: Cloudflare) | LAN |
 | 🔐 | **Vaultwarden** · `CT 102` | Bitwarden-compatible password manager | 🔒 HTTPS via `tailscale serve` |
 | 📄 | **paperless-ngx** · `CT 103` | Document archive for university material, by subject | 🔒 HTTPS via `tailscale serve` |
