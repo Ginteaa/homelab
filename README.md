@@ -116,14 +116,6 @@ All containers use **static IPs** and **start at boot**.
 | | |
 |---|---|
 | 🌙 **Scheduled power cycling** | The host shuts down around 01:00 and wakes at 08:00 with `rtcwake` and a systemd timer; containers return automatically on boot |
-| 💽 **Disk resizing** | Immich's container disk was shrunk from 256 GB to 120 GB through a backup-and-restore cycle |
-| 🗝 **Offline secrets backup** | Encrypted Vaultwarden exports are copied to an external drive that stays disconnected |
-
-## 💡 Lessons learned
-
-- **Not every tool fits.** I tested **Seafile** for file sharing, didn't like it and removed it completely: container, desktop client and tailnet node.
-- **Constraints shape the design.** When the ISP router can't be configured, the overlay network has to take over tasks such as DNS.
-- **One LXC per service** with Docker Compose inside keeps services isolated and easy to back up or rebuild independently.
 
 ## 🛣️ Roadmap
 
